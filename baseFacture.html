@@ -1,0 +1,70 @@
+
+    <script>
+
+
+        organisme = 
+        [
+                        Facture1 = "Free Mobile", 
+                        Facture2 = "Free Fibre", 
+                        Facture3 = "Covered", 
+                        Facture4 = "Youtube", 
+                        Facture5 = "Loyer",
+                        Facture6 = "Total Energie", 
+                        Facture7 = "Youinited Xbox", 
+                        Facture8 = "Shadow", 
+
+
+         ]
+
+
+         prix =
+         [
+                            un = 15.99, 
+                            deux = 49.99+10, 
+                            trois = 12.90 + 6.90, 
+                            Quatre = 11.99, 
+                            cinq = 515.00, 
+                            six = 73.00, 
+                            spet = 23.99, 
+                            huite = 18.00, 
+         ]
+
+         banque = 
+         [
+                        Banque1 = "CIC", 
+                        Banque2 = "Shine", 
+                        Banque3 =   "N26", 
+                        Banque4 = "MONA BANQUE", 
+         ]
+      
+        
+        total = prix[0]+prix[1]+prix[2]+prix[3]+prix[4]+prix[5]+prix[6]+prix[7]
+
+    
+                  
+         document.write("<table >");
+                    document.write("<th> Organisme </th>");
+                    document.write("<th> Prix </th>");
+              
+           
+        for (h=0; h<8 ; h++){
+            document.write("<tr>");
+                document.write("<td> " + organisme[h] + "   </td>") 
+                document.write("<td> " + prix[h] + " €   </td>")     
+                
+               
+
+        
+        }
+
+        document.write("</table>");
+
+       </script>
+
+       <div class="fle">
+
+            <h1 class="center"> <script> document.write(total).toFixed(2) </script></h1>
+
+       </div>
+
+    

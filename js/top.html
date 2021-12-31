@@ -1,0 +1,50 @@
+<!-- haut ! -->
+
+
+<script>
+
+
+TotalEssenceNovS1 = 0; 
+  for (let es = 0; kl < KlmNovS1.length; es++) {
+    TotalEssenceNovS1 += TotalEssenceNovS1[es];
+    }
+<script>
+
+     
+  document.write(' <div  class="modal" id="Au21S1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenteredLabel" aria-hidden="true"> <div  class="modal-dialog modal-dialog-scrollable" role="document"> <div class="modal-content"> <div  class="modal-header text-white bg-dark">  <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button></div><div class="modal-body">' )
+  document.write( '<table class="table center"><thead class="text-white bg-dark"><tr> <th>Organisme </th><th>Date </th><th>Dépenses</th>  </thead> <tbody>  ' )
+  // Affiche Semaine Dépences  
+for (i = 0; i  < DepensesAuS4.length ; i++) {
+
+  Total = RentreeAuS4[i] - DepensesAuS4[i]
+ 
+    if (DepensesAuS4[i] === 0 ) {
+     
+    }
+    else {
+     
+    document.write(' <tr > <th id="ORGA0821" scope="row">'+OrganismeDEPAuS4[i]+'</th>')
+    document.write('<td class="text-center  text-primary ">' + DateDEPAuS4[i] +'</td>')
+    document.write('<td class="text-center text-danger"> <span class="badge badgeModial badge-danger">-'+DepensesAuS4[i]+'€</span></td>')
+    } }
+    document.write('</tr>')
+    document.write(' <div  class="card center text-white bg-dark mb-3 d-inline-block" style="width: 100%;"><div class="card-header">Total Dépenses '+NumJourAu[2]+'</div><div class="card-body"> <p </p> </div></div>')
+    document.write('</table>')
+    document.write(' <div class="card center text-white bg-dark mb-3 d-inline-block" style="width: 100%;"><div class="card-header">Total Revenue '+NumJourAu[2]+'</div><div class="card-body"> <p class="card-text"></p> </div></div>')
+   document.write( '<table class="table center"><thead class="text-white bg-dark"><tr> <th>Organisme </th><th>Date </th><th>Rentrée</th>  </thead> <tbody>  ')
+// Affiche Semaine Rentrée 
+   for (r = 0; r < RentreeAuS4.length; r++) {
+    if (RentreeAuS4[r] === 0 ) {
+      
+    }
+    else {
+   
+    document.write(' <tr > <th id="ORGA0821" scope="row">'+OrganismeRentAuS4[r]+'</th>')
+    document.write('<td class="text-center  text-primary ">' + DateRentAuS4[r] +'</td>')
+    document.write('<td class="text-center text-success"> <span class="badge badgeModial badge-success">+'+RentreeAuS4[r]+'€</span></td>')
+   }
+}
+document.write('</tr>')
+document.write('</table>')
+document.write('  </div> <div class="modal-footer text-white bg-dark"> <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>  </div> </div> </div></div>')  
+</script>
